@@ -1,0 +1,7 @@
+.blogNav {
+    color: rgb(112, 63, 116)
+}
+
+.blogNav:hover {
+    color: blueviolet;
+}

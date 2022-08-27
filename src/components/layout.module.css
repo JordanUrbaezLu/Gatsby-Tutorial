@@ -8,7 +8,7 @@
 }
 
 .heading {
-  color: rgb(234, 66, 72);
+  color: rgb(209, 66, 234);
 }
 
 .nav-links {
@@ -20,13 +20,12 @@
   padding-right: 2rem;
 }
 .nav-link-text {
-  color: black;
+  text-decoration: none;
 }
 
 .site-title {
   font-size: 3rem;
-  color: gray;
+  color: #9c27b0;
   font-weight: 700;
   margin: 3rem 0;
-  text-shadow: #474747 3px 5px 2px;
 }

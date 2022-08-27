@@ -8,6 +8,7 @@ import {
   navLinkText,
   siteTitle
 } from "./layout.module.css";
+import { Button } from "@mui/material";
 
 const Layout = ({ pageTitle, children }) => {
   const data = useStaticQuery(
@@ -29,17 +30,17 @@ const Layout = ({ pageTitle, children }) => {
         <ul className={navLinks}>
           <li className={navLinkItem}>
             <Link to="/" className={navLinkText}>
-              Home
+              <Button color="secondary" variant="outlined">Home</Button>
             </Link>
           </li>
           <li className={navLinkItem}>
             <Link to="/about" className={navLinkText}>
-              About
+            <Button color="secondary" variant="outlined">About</Button>
             </Link>
           </li>
           <li className={navLinkItem}>
             <Link to="/blog" className={navLinkText}>
-              Blog
+            <Button color="secondary" variant="outlined">Blog</Button>
             </Link>
           </li>
         </ul>

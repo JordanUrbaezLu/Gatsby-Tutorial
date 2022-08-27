@@ -1,5 +1,6 @@
 import * as React from 'react'
 import { Link, graphql } from 'gatsby'
+import { blogNav } from "./index.module.css"
 import Layout from '../../components/layout'
 import Seo from '../../components/seo'
 
@@ -10,7 +11,7 @@ const BlogPage = ({ data }) => {
         data.allMdx.nodes.map(node => (
           <article key={node.id}>
             <h2>
-              <Link to={`/blog/${node.frontmatter.slug}`}>
+              <Link to={`/blog/${node.frontmatter.slug}`} className={blogNav}>
                 {node.frontmatter.title}
               </Link>
             </h2>
